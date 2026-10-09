@@ -1,0 +1,11 @@
+# Copy this record into security_feeds.yaml under `entities` and replace the examples.
+- id: example-publisher
+  name: Example Publisher
+  website: https://example.org
+  feed:
+    url: https://example.org/feed.xml
+    format: rss # rss, atom, or rdf
+  categories: [threat-research]
+  sources: [threat-feed-collection] # registered source/provenance IDs from security_feeds.yaml metadata
+  status: unverified
+  # Optional fields: publisher, description, notes, last_verified, latest_post_seen

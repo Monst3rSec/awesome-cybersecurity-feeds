@@ -1,0 +1,1770 @@
+meta:
+  schema_version: 1
+  description: Security vendor and threat intelligence RSS feeds
+  imported_metadata:
+    title: Security vendor and threat intelligence RSS feeds
+    generated: '2026-09-29'
+    entity_count: 133
+    category_counts:
+      ai-soc-vendor: 60
+      threat-news: 20
+      threat-research: 44
+      government-cert: 8
+      vulnerability-exploit: 6
+    categories:
+      ai-soc-vendor: AI SOC and SecOps vendors from the SecOps Unpacked directory
+      threat-news: Security news outlets
+      threat-research: Vendor and independent threat research labs
+      government-cert: Government and CERT advisories
+      vulnerability-exploit: Vulnerability, exploit and ransomware trackers
+    notes: Every feed returned valid RSS/Atom/RDF XML on the verification date. Entities appearing in
+      both source lists are merged with multiple categories.
+  categories:
+  - id: ai-soc-vendor
+    name: AI SOC vendors
+    description: AI SOC and SecOps vendors from the SecOps Unpacked directory
+  - id: threat-news
+    name: Threat news
+    description: Security news outlets
+  - id: threat-research
+    name: Threat research
+    description: Vendor and independent threat research labs
+  - id: government-cert
+    name: Government and CERT advisories
+    description: Government and CERT advisories
+  - id: vulnerability-exploit
+    name: Vulnerabilities and exploits
+    description: Vulnerability, exploit and ransomware trackers
+  provenance:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+entities:
+- id: airmdr
+  name: AirMdr
+  website: https://airmdr.com
+  feed:
+    url: https://airmdr.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: anvilogic
+  name: Anvilogic
+  website: https://anvilogic.com
+  feed:
+    url: https://www.anvilogic.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: arctic-wolf
+  name: Arctic Wolf
+  website: https://arcticwolf.com
+  feed:
+    url: https://arcticwolf.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  - threat-research
+  sources:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: artemis
+  name: Artemis
+  website: https://artemissecurity.ai
+  feed:
+    url: https://artemissecurity.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: axoflow
+  name: Axoflow
+  website: https://axoflow.com
+  feed:
+    url: https://axoflow.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: binalyze
+  name: Binalyze
+  website: https://binalyze.com
+  feed:
+    url: https://binalyze.ai/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: blinkops
+  name: BlinkOps
+  website: https://blinkops.com
+  feed:
+    url: https://www.blinkops.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: bricklayer-ai
+  name: Bricklayer AI
+  website: https://bricklayer.ai
+  feed:
+    url: https://www.bricklayer.ai/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: conifers
+  name: Conifers
+  website: https://conifers.ai
+  feed:
+    url: https://www.conifers.ai/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: cribl
+  name: Cribl
+  website: https://cribl.io
+  feed:
+    url: https://cribl.io/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: crowdstrike
+  name: CrowdStrike
+  website: https://crowdstrike.com
+  feed:
+    url: https://www.crowdstrike.com/en-us/blog/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  - threat-research
+  sources:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: d3-security
+  name: D3 Security
+  website: https://d3security.com
+  feed:
+    url: https://d3security.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: darktrace
+  name: Darktrace
+  website: https://darktrace.com
+  feed:
+    url: https://www.darktrace.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: databricks
+  name: Databricks
+  website: https://databricks.com
+  feed:
+    url: https://www.databricks.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: datadog
+  name: Datadog
+  website: https://datadoghq.com
+  feed:
+    url: https://www.datadoghq.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: deeptempo
+  name: DeepTempo
+  website: https://deeptempo.ai
+  feed:
+    url: https://www.deeptempo.ai/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: deepwatch
+  name: DeepWatch
+  website: https://deepwatch.com
+  feed:
+    url: https://www.deepwatch.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: digital-hands
+  name: Digital Hands
+  website: https://digitalhands.com
+  feed:
+    url: https://blog.digitalhands.com/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: dropzone-ai
+  name: Dropzone AI
+  website: https://dropzone.ai
+  feed:
+    url: https://www.dropzone.ai/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: elastic
+  name: Elastic
+  website: https://elastic.co
+  feed:
+    url: https://www.elastic.co/blog/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: embed-security
+  name: Embed Security
+  website: https://embedsecurity.com
+  feed:
+    url: https://embedsecurity.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: exabeam
+  name: Exabeam
+  website: https://exabeam.com
+  feed:
+    url: https://www.exabeam.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: exaforce
+  name: Exaforce
+  website: https://exaforce.com
+  feed:
+    url: https://www.exaforce.com/blogs/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: expel
+  name: Expel
+  website: https://expel.com
+  feed:
+    url: https://expel.com/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  - threat-research
+  sources:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: extrahop
+  name: ExtraHop
+  website: https://extrahop.com
+  feed:
+    url: https://www.extrahop.com/api/rss/blog.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: fig
+  name: Fig
+  website: https://fig.security
+  feed:
+    url: https://www.fig.security/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: gurucul
+  name: Gurucul
+  website: https://gurucul.com
+  feed:
+    url: https://gurucul.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: hunters
+  name: Hunters
+  website: https://hunters.security
+  feed:
+    url: https://www.hunters.security/en/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: imperum
+  name: Imperum
+  website: https://imperum.ai
+  feed:
+    url: https://www.imperum.io/news/feed.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: microsoft-sentinel
+  name: Microsoft Sentinel
+  website: https://learn.microsoft.com/azure/sentinel
+  feed:
+    url: https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=MicrosoftSentinelBlog
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Tech Community board feed for the Sentinel blog.
+- id: mitiga
+  name: Mitiga
+  website: https://mitiga.io
+  feed:
+    url: https://www.mitiga.io/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: nebulock
+  name: Nebulock
+  website: https://nebulock.io
+  feed:
+    url: https://nebulock.io/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: orryx-ai
+  name: Orryx AI
+  website: https://beyoncyber.com
+  feed:
+    url: http://www.beyoncyber.com/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Domain resolved via search to Beyon Cyber; verify ownership before trusting.
+- id: palo-alto-networks
+  name: Palo Alto Networks
+  website: https://paloaltonetworks.com
+  feed:
+    url: https://www.paloaltonetworks.com/blog/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: pre-security
+  name: PRE Security
+  website: https://presecurity.ai
+  feed:
+    url: https://presecurity.ai/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: priam-cyber-ai
+  name: Priam Cyber AI
+  website: https://priam.ai
+  feed:
+    url: https://priam.ai/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: prophet-security
+  name: Prophet Security
+  website: https://prophetsecurity.ai
+  feed:
+    url: https://www.prophetsecurity.ai/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: reliaquest
+  name: ReliaQuest
+  website: https://reliaquest.com
+  feed:
+    url: https://reliaquest.com/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: runreveal
+  name: RunReveal
+  website: https://runreveal.com
+  feed:
+    url: https://blog.runreveal.com/rss/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: seculyze
+  name: Seculyze
+  website: https://seculyze.com
+  feed:
+    url: https://seculyze.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: secure-com
+  name: Secure.com
+  website: https://secure.com
+  feed:
+    url: https://www.secure.com/blog/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: securevisio
+  name: SecureVisio
+  website: https://securevisio.com
+  feed:
+    url: https://securevisio.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: sentinelone
+  name: SentinelOne
+  website: https://sentinelone.com
+  feed:
+    url: https://www.sentinelone.com/blog/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: shuffle
+  name: Shuffle
+  website: https://shuffler.io
+  feed:
+    url: https://medium.com/feed/shuffle-automation
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Hosted on Medium, not the company site.
+- id: simbian
+  name: Simbian
+  website: https://simbian.ai
+  feed:
+    url: https://simbian.ai/blog/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: sleuth-kit-labs
+  name: Sleuth Kit Labs
+  website: https://sleuthkitlabs.com
+  feed:
+    url: https://sleuthkitlabs.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: soc-prime
+  name: SOC Prime
+  website: https://socprime.com
+  feed:
+    url: https://socprime.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: stellar-cyber
+  name: Stellar Cyber
+  website: https://stellarcyber.ai
+  feed:
+    url: https://stellarcyber.ai/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: sumo-logic
+  name: Sumo Logic
+  website: https://sumologic.com
+  feed:
+    url: https://www.sumologic.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: swimlane
+  name: Swimlane
+  website: https://swimlane.com
+  feed:
+    url: https://swimlane.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: tenacium-dc
+  name: Tenacium DC
+  website: https://tenacium.co.uk
+  feed:
+    url: https://www.tenacium.co.uk/blog-feed.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: tenex-ai
+  name: Tenex AI
+  website: https://tenex.ai
+  feed:
+    url: https://tenex.ai/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: tenzir
+  name: Tenzir
+  website: https://tenzir.com
+  feed:
+    url: https://tenzir.com/blog/feed.xml
+    format: atom
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Blog feed; tenzir.com/changelog/feed.xml is a separate product changelog.
+- id: threatdefence
+  name: ThreatDefence
+  website: https://threatdefence.com
+  feed:
+    url: https://threatdefence.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: tines
+  name: Tines
+  website: https://tines.com
+  feed:
+    url: https://www.tines.com/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: trend-micro
+  name: Trend Micro
+  website: https://www.trendmicro.com
+  feed:
+    url: http://feeds.trendmicro.com/TrendMicroResearch
+    format: rss
+  categories:
+  - ai-soc-vendor
+  - threat-research
+  sources:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+- id: tuskira
+  name: Tuskira
+  website: https://tuskira.ai
+  feed:
+    url: https://www.tuskira.ai/blog/rss.xml
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+- id: underdefense
+  name: UnderDefense
+  website: https://underdefense.com
+  feed:
+    url: https://underdefense.com/feed/
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: zscaler
+  name: Zscaler
+  website: https://zscaler.com
+  feed:
+    url: https://www.zscaler.com/blogs/feeds/security-research
+    format: rss
+  categories:
+  - ai-soc-vendor
+  - threat-research
+  sources:
+  - ai-soc-vendor-directory
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+- id: zynap
+  name: Zynap
+  website: https://zynap.com
+  feed:
+    url: https://www.zynap.com/feed
+    format: rss
+  categories:
+  - ai-soc-vendor
+  sources:
+  - ai-soc-vendor-directory
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Site-wide WordPress feed; may include press releases.
+- id: bleepingcomputer
+  name: BleepingComputer
+  website: https://bleepingcomputer.com
+  feed:
+    url: https://www.bleepingcomputer.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: cso-online
+  name: CSO Online
+  website: https://csoonline.com
+  feed:
+    url: https://www.csoonline.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: cyberscoop
+  name: CyberScoop
+  website: https://cyberscoop.com
+  feed:
+    url: https://cyberscoop.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: cybersecurity-dive
+  name: Cybersecurity Dive
+  website: https://cybersecuritydive.com
+  feed:
+    url: https://www.cybersecuritydive.com/feeds/news/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: dark-reading
+  name: Dark Reading
+  website: https://darkreading.com
+  feed:
+    url: https://www.darkreading.com/rss.xml
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-12-03'
+  notes: Contains future-dated items; sanity-check feed dates.
+- id: databreaches-net
+  name: DataBreaches.net
+  website: https://databreaches.net
+  feed:
+    url: https://databreaches.net/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+  notes: Breach reporting; high overlap with news tier.
+- id: graham-cluley
+  name: Graham Cluley
+  website: https://grahamcluley.com
+  feed:
+    url: https://grahamcluley.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: help-net-security
+  name: Help Net Security
+  website: https://helpnetsecurity.com
+  feed:
+    url: https://www.helpnetsecurity.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: infosecurity-magazine
+  name: Infosecurity Magazine
+  website: https://infosecurity-magazine.com
+  feed:
+    url: https://www.infosecurity-magazine.com/rss/news/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: krebs-on-security
+  name: Krebs on Security
+  website: https://krebsonsecurity.com
+  feed:
+    url: https://krebsonsecurity.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: risky-business-news
+  name: Risky Business News
+  website: https://risky.biz
+  feed:
+    url: https://risky.biz/feeds/risky-business-news/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: sans-internet-storm-center
+  name: SANS Internet Storm Center
+  website: https://isc.sans.edu
+  feed:
+    url: https://isc.sans.edu/rssfeed_full.xml
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: sc-media
+  name: SC Media
+  website: https://scworld.com
+  feed:
+    url: https://www.scworld.com/rss
+    format: atom
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: schneier-on-security
+  name: Schneier on Security
+  website: https://schneier.com
+  feed:
+    url: https://www.schneier.com/feed/atom/
+    format: atom
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: security-affairs
+  name: Security Affairs
+  website: https://securityaffairs.com
+  feed:
+    url: https://securityaffairs.com/feed
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: securityweek
+  name: SecurityWeek
+  website: https://securityweek.com
+  feed:
+    url: https://www.securityweek.com/feed/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: the-hacker-news
+  name: The Hacker News
+  website: https://thehackernews.com
+  feed:
+    url: https://feeds.feedburner.com/TheHackersNews
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: the-record-recorded-future-news
+  name: The Record (Recorded Future News)
+  website: https://therecord.media
+  feed:
+    url: https://therecord.media/feed
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: the-register-security
+  name: The Register Security
+  website: https://theregister.com
+  feed:
+    url: https://www.theregister.com/security/headlines.atom
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: troy-hunt
+  name: Troy Hunt
+  website: https://troyhunt.com
+  feed:
+    url: https://www.troyhunt.com/rss/
+    format: rss
+  categories:
+  - threat-news
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: any-run
+  name: ANY.RUN
+  website: https://any.run
+  feed:
+    url: https://any.run/cybersecurity-blog/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: aqua-nautilus
+  name: Aqua Nautilus
+  website: https://aquasec.com
+  feed:
+    url: https://www.aquasec.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: bitdefender-labs
+  name: Bitdefender Labs
+  website: https://bitdefender.com
+  feed:
+    url: https://www.bitdefender.com/nuxt/api/en-us/rss/labs/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-08-03'
+- id: check-point-research
+  name: Check Point Research
+  website: https://research.checkpoint.com
+  feed:
+    url: https://research.checkpoint.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: cisco-talos
+  name: Cisco Talos
+  website: https://blog.talosintelligence.com
+  feed:
+    url: https://blog.talosintelligence.com/rss/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: citizen-lab
+  name: Citizen Lab
+  website: https://citizenlab.ca
+  feed:
+    url: https://citizenlab.ca/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-22'
+- id: cloudflare
+  name: Cloudflare
+  website: https://blog.cloudflare.com
+  feed:
+    url: https://blog.cloudflare.com/rss/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: datadog-security-labs
+  name: Datadog Security Labs
+  website: https://securitylabs.datadoghq.com
+  feed:
+    url: https://securitylabs.datadoghq.com/rss/feed.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: elastic-security-labs
+  name: Elastic Security Labs
+  website: https://elastic.co
+  feed:
+    url: https://www.elastic.co/security-labs/rss/feed.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: eset-welivesecurity
+  name: ESET WeLiveSecurity
+  website: https://www.welivesecurity.com
+  feed:
+    url: https://feeds.feedburner.com/eset/blog
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: google-project-zero
+  name: Google Project Zero
+  website: https://googleprojectzero.blogspot.com
+  feed:
+    url: https://googleprojectzero.blogspot.com/feeds/posts/default
+    format: atom
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-22'
+- id: google-threat-intelligence-mandiant
+  name: Google Threat Intelligence (Mandiant)
+  website: https://cloud.google.com/blog/topics/threat-intelligence
+  feed:
+    url: https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+  notes: Google TAG content appears folded into this feed; TAG's own RSS returns 404.
+- id: greynoise
+  name: GreyNoise
+  website: https://greynoise.io
+  feed:
+    url: https://www.greynoise.io/blog/rss.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: group-ib
+  name: Group-IB
+  website: https://group-ib.com
+  feed:
+    url: https://www.group-ib.com/feed/blogfeed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: horizon3-ai
+  name: Horizon3.ai
+  website: https://horizon3.ai
+  feed:
+    url: https://www.horizon3.ai/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: huntress
+  name: Huntress
+  website: https://huntress.com
+  feed:
+    url: https://www.huntress.com/blog/rss.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: kaspersky-securelist
+  name: Kaspersky Securelist
+  website: https://securelist.com
+  feed:
+    url: https://securelist.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-24'
+- id: lab52
+  name: Lab52
+  website: https://lab52.io
+  feed:
+    url: https://lab52.io/blog/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-07-03'
+- id: malwarebytes-labs
+  name: Malwarebytes Labs
+  website: https://malwarebytes.com
+  feed:
+    url: https://www.malwarebytes.com/blog/feed/index.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: microsoft-security-blog
+  name: Microsoft Security Blog
+  website: https://microsoft.com
+  feed:
+    url: https://www.microsoft.com/en-us/security/blog/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: objective-see
+  name: Objective-See
+  website: https://objective-see.org
+  feed:
+    url: https://objective-see.org/rss.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-08-23'
+- id: palo-alto-unit-42
+  name: Palo Alto Unit 42
+  website: https://unit42.paloaltonetworks.com
+  feed:
+    url: https://unit42.paloaltonetworks.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: proofpoint-threat-insight
+  name: Proofpoint Threat Insight
+  website: https://proofpoint.com
+  feed:
+    url: https://www.proofpoint.com/us/threat-insight-blog.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: qualys-threat-research
+  name: Qualys Threat Research
+  website: https://blog.qualys.com
+  feed:
+    url: https://blog.qualys.com/feed
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: rapid7
+  name: Rapid7
+  website: https://rapid7.com
+  feed:
+    url: https://www.rapid7.com/blog/rss/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: recorded-future
+  name: Recorded Future
+  website: https://recordedfuture.com
+  feed:
+    url: https://www.recordedfuture.com/feed
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: red-canary
+  name: Red Canary
+  website: https://redcanary.com
+  feed:
+    url: https://redcanary.com/blog/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-08-20'
+- id: reversinglabs
+  name: ReversingLabs
+  website: https://reversinglabs.com
+  feed:
+    url: https://www.reversinglabs.com/blog/rss.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: sekoia-tdr
+  name: Sekoia TDR
+  website: https://blog.sekoia.io
+  feed:
+    url: https://blog.sekoia.io/feed
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  notes: Verified manually; intermittently slow to respond.
+- id: sentinellabs
+  name: SentinelLabs
+  website: https://sentinelone.com
+  feed:
+    url: https://www.sentinelone.com/labs/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-18'
+- id: silent-push
+  name: Silent Push
+  website: https://silentpush.com
+  feed:
+    url: https://www.silentpush.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: socket
+  name: Socket
+  website: https://socket.dev
+  feed:
+    url: https://socket.dev/api/blog/feed.atom
+    format: atom
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+- id: tenable
+  name: Tenable
+  website: https://tenable.com
+  feed:
+    url: https://www.tenable.com/blog/feed
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-27'
+- id: the-dfir-report
+  name: The DFIR Report
+  website: https://thedfirreport.com
+  feed:
+    url: https://thedfirreport.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-08-24'
+- id: trail-of-bits
+  name: Trail of Bits
+  website: https://blog.trailofbits.com
+  feed:
+    url: https://blog.trailofbits.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-25'
+- id: volexity
+  name: Volexity
+  website: https://volexity.com
+  feed:
+    url: https://www.volexity.com/feed/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-21'
+- id: watchtowr-labs
+  name: watchTowr Labs
+  website: https://labs.watchtowr.com
+  feed:
+    url: https://labs.watchtowr.com/rss/
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: wiz
+  name: Wiz
+  website: https://wiz.io
+  feed:
+    url: https://www.wiz.io/feed/rss.xml
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+  notes: Whole-site feed; mixes marketing with research. Filter before ingest.
+- id: zero-day-initiative
+  name: Zero Day Initiative
+  website: https://zerodayinitiative.com
+  feed:
+    url: https://www.zerodayinitiative.com/blog?format=rss
+    format: rss
+  categories:
+  - threat-research
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-23'
+- id: canadian-centre-for-cyber-security
+  name: Canadian Centre for Cyber Security
+  website: https://cyber.gc.ca
+  feed:
+    url: https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en
+    format: atom
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: cert-eu-advisories
+  name: CERT-EU Advisories
+  website: https://cert.europa.eu
+  feed:
+    url: https://cert.europa.eu/publications/security-advisories-rss
+    format: rss
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-27'
+- id: cert-fr-alerts
+  name: CERT-FR Alerts
+  website: https://cert.ssi.gouv.fr
+  feed:
+    url: https://www.cert.ssi.gouv.fr/alerte/feed/
+    format: rss
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: cert-cc-vulnerability-notes
+  name: CERT/CC Vulnerability Notes
+  website: https://kb.cert.org
+  feed:
+    url: https://www.kb.cert.org/vulfeed
+    format: atom
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: cisa-cybersecurity-advisories
+  name: CISA Cybersecurity Advisories
+  website: https://cisa.gov
+  feed:
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    format: rss
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-27'
+- id: cisa-news
+  name: CISA News
+  website: https://cisa.gov
+  feed:
+    url: https://www.cisa.gov/news.xml
+    format: rss
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-23'
+- id: jpcert-cc
+  name: JPCERT/CC
+  website: https://jpcert.or.jp
+  feed:
+    url: https://www.jpcert.or.jp/english/rss/jpcert-en.rdf
+    format: rdf
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-09'
+- id: ncsc-uk
+  name: NCSC UK
+  website: https://ncsc.gov.uk
+  feed:
+    url: https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml
+    format: rss
+  categories:
+  - government-cert
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-28'
+- id: cvefeed-io
+  name: cvefeed.io Latest CVEs
+  website: https://cvefeed.io
+  feed:
+    url: https://cvefeed.io/rssfeed/latest.xml
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: exploit-db
+  name: Exploit-DB
+  website: https://exploit-db.com
+  feed:
+    url: https://www.exploit-db.com/rss.xml
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: full-disclosure-seclists
+  name: Full Disclosure
+  website: https://seclists.org
+  feed:
+    url: https://seclists.org/rss/fulldisclosure.rss
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: msrc-update-guide
+  name: Microsoft MSRC Update Guide
+  website: https://msrc.microsoft.com
+  feed:
+    url: https://api.msrc.microsoft.com/update-guide/rss
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+  notes: Security update guide, not the MSRC blog (blog feed blocked).
+- id: oss-security-seclists
+  name: oss-security
+  website: https://seclists.org
+  feed:
+    url: https://seclists.org/rss/oss-sec.rss
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+- id: ransomware-live
+  name: Ransomware.live
+  website: https://ransomware.live
+  feed:
+    url: https://www.ransomware.live/rss.xml
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: verified
+  last_verified: '2026-09-29'
+  latest_post_seen: '2026-09-29'
+  notes: Victim leak-site posts, high volume.

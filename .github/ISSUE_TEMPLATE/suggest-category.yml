@@ -1,0 +1,30 @@
+name: Suggest a category
+description: Propose a taxonomy change for maintainer review.
+title: "Category suggestion: "
+labels: ["taxonomy"]
+body:
+  - type: input
+    id: category_id
+    attributes:
+      label: Proposed category ID
+      description: Use lowercase kebab-case.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Category description
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example sources
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why are existing categories insufficient?
+    validations:
+      required: true

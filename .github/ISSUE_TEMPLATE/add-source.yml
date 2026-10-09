@@ -1,0 +1,75 @@
+name: Add a source
+description: Propose a cybersecurity publication or feed.
+title: "Add source: "
+labels: ["source suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      placeholder: Publisher or source name
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+    validations:
+      required: true
+  - type: input
+    id: feed
+    attributes:
+      label: RSS or Atom feed URL
+      description: Include the direct feed URL where possible.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Best-fit category
+      options:
+        - ai-soc-vendor
+        - threat-news
+        - threat-research
+        - government-cert
+        - vulnerability-exploit
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Neutral description
+      description: Optional; use factual, non-promotional wording.
+    validations:
+      required: false
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - Independent research or publication
+        - Vendor or publisher blog
+        - Government or CERT advisory source
+        - Vulnerability or exploit tracker
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher or vendor, if applicable
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence that the feed exists
+      description: Link to the page that publishes or links to this feed.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Optional notes
+    validations:
+      required: false

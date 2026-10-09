@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Monst3rSec/awesome-cybersecurity-feeds/schema/security-feeds.schema.json",
+  "title": "Cybersecurity feeds directory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "entities"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "description", "categories", "provenance"],
+      "properties": {
+        "schema_version": {"const": 1},
+        "description": {"type": "string", "minLength": 1},
+        "imported_metadata": {
+          "type": "object", "additionalProperties": false,
+          "required": ["title", "generated", "entity_count", "category_counts", "categories", "notes"],
+          "properties": {
+            "title": {"type": "string", "minLength": 1},
+            "generated": {"type": "string", "format": "date"},
+            "entity_count": {"type": "integer", "minimum": 0},
+            "category_counts": {
+              "type": "object", "additionalProperties": false,
+              "properties": {
+                "ai-soc-vendor": {"type": "integer", "minimum": 0},
+                "threat-news": {"type": "integer", "minimum": 0},
+                "threat-research": {"type": "integer", "minimum": 0},
+                "government-cert": {"type": "integer", "minimum": 0},
+                "vulnerability-exploit": {"type": "integer", "minimum": 0}
+              },
+              "required": ["ai-soc-vendor", "threat-news", "threat-research", "government-cert", "vulnerability-exploit"]
+            },
+            "categories": {
+              "type": "object", "additionalProperties": false,
+              "properties": {
+                "ai-soc-vendor": {"type": "string"},
+                "threat-news": {"type": "string"},
+                "threat-research": {"type": "string"},
+                "government-cert": {"type": "string"},
+                "vulnerability-exploit": {"type": "string"}
+              },
+              "required": ["ai-soc-vendor", "threat-news", "threat-research", "government-cert", "vulnerability-exploit"]
+            },
+            "notes": {"type": "string"}
+          }
+        },
+        "categories": {
+          "type": "array", "minItems": 5,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["id", "name", "description"],
+            "properties": {
+              "id": {"enum": ["ai-soc-vendor", "threat-news", "threat-research", "government-cert", "vulnerability-exploit"]},
+              "name": {"type": "string", "minLength": 1},
+              "description": {"type": "string", "minLength": 1}
+            }
+          }
+        },
+        "provenance": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"enum": ["ai-soc-vendor-directory", "threat-feed-collection"]}
+        }
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "name", "website", "feed", "categories", "sources", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "name": {"type": "string", "minLength": 1},
+          "website": {"type": "string", "format": "uri", "pattern": "^https?://"},
+          "feed": {
+            "type": "object", "additionalProperties": false,
+            "required": ["url", "format"],
+            "properties": {
+              "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+              "format": {"enum": ["rss", "atom", "rdf"]}
+            }
+          },
+          "categories": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["ai-soc-vendor", "threat-news", "threat-research", "government-cert", "vulnerability-exploit"]}},
+          "sources": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["ai-soc-vendor-directory", "threat-feed-collection"]}},
+          "status": {"enum": ["unverified", "verified", "needs_review", "deprecated"]},
+          "last_verified": {"type": "string", "format": "date"},
+          "latest_post_seen": {"type": "string", "format": "date"},
+          "description": {"type": "string", "minLength": 1},
+          "publisher": {"type": "string", "minLength": 1},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

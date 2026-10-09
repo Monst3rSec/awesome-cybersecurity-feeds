@@ -1,0 +1,37 @@
+name: Report a broken feed
+description: Report a feed URL that may have moved or stopped working.
+title: "Broken feed: "
+labels: ["feed maintenance"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source ID or name
+    validations:
+      required: true
+  - type: input
+    id: feed_url
+    attributes:
+      label: Feed URL
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Observed failure
+    validations:
+      required: true
+  - type: input
+    id: observed_date
+    attributes:
+      label: Date observed
+      description: Use YYYY-MM-DD.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Optional diagnostic information
+      description: Remove credentials, cookies, private data, and tracking parameters.
+    validations:
+      required: false
