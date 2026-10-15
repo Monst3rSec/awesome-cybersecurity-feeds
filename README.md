@@ -223,6 +223,7 @@ Browse sources by category. Entries and descriptions are maintained in `security
 | cvefeed.io Latest CVEs | [cvefeed.io Latest CVEs](https://cvefeed.io) | [Feed](https://cvefeed.io/rssfeed/latest.xml) | rss |
 | Exploit-DB | [Exploit-DB](https://exploit-db.com) | [Feed](https://www.exploit-db.com/rss.xml) | rss |
 | Full Disclosure | [Full Disclosure](https://seclists.org) | [Feed](https://seclists.org/rss/fulldisclosure.rss) | rss |
+| ICHI — Internet Cyber Health Index | [ICHI — Internet Cyber Health Index](https://ichi.global) | [Feed](https://ichi.global/api/alerts) | rss |
 | Microsoft MSRC Update Guide | [Microsoft MSRC Update Guide](https://msrc.microsoft.com) | [Feed](https://api.msrc.microsoft.com/update-guide/rss) | rss |
 | oss-security | [oss-security](https://seclists.org) | [Feed](https://seclists.org/rss/oss-sec.rss) | rss |
 | Ransomware.live | [Ransomware.live](https://ransomware.live) | [Feed](https://www.ransomware.live/rss.xml) | rss |
