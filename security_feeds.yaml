@@ -1768,3 +1768,22 @@ entities:
   last_verified: '2026-09-29'
   latest_post_seen: '2026-09-29'
   notes: Victim leak-site posts, high volume.
+- id: ichi-internet-cyber-health-index
+  name: ICHI — Internet Cyber Health Index
+  website: https://ichi.global
+  feed:
+    url: https://ichi.global/api/alerts
+    format: rss
+  categories:
+  - vulnerability-exploit
+  sources:
+  - threat-feed-collection
+  status: unverified
+  description: Free, source-transparent public dashboard aggregating daily Internet
+    cyber-health signals from public sources — vulnerability pressure, active exploitation,
+    malware infrastructure, threat actor activity, ransomware, and supply-chain pressure.
+    Publishes an RSS alert feed when critical threat thresholds are crossed. Outside-in
+    directional signal; not an organisational risk score or deterministic forecast.
+    Atom variant available at /api/alerts?format=atom.
+  notes: Creator-disclosed submission. Dashboard UI at ichi.global; critical-alerts
+    RSS at /api/alerts. Maintained by the project's creator.
